@@ -56,10 +56,8 @@ function deleteUserbyId($id)
 function updateUser($id, $username, $full_name, $password)
 {
 	global $dbh;
-	$sql = "UPDATE `users`
-			SET username = $username
-				full_name = $full_name
-				password = $password
+	$sql = "UPDATE `users` 
+			SET username = '$username', full_name = '$full_name', password = 12345678 
 			WHERE id = $id";
 	$stm = $dbh->prepare($sql);
 	if ($stm->execute()) {
