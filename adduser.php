@@ -12,7 +12,7 @@ if (isset($_POST['username'],$_POST['full_name'],$_POST['password'],$_POST['re-p
 			var full_name = "<?php echo $full_name; ?>";
 			alert(full_name + " " +"Has been added successfully");
 			</script>
-	<?php
+		<?php
 	}else {
 		echo "Failed";
 	}
